@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Khand", sans-serif;
+  letter-spacing: 0.02rem;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  background-color: F5F7F8;
+  flex-direction: column;
+}
+
+#appTitle {
+  text-align: center;
+  font-size: 5rem;
+  padding: 10rem;
+}
+#formListContainer {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  font-size: 1.1rem;
+  background-color: whitesmoke;
+  padding: 2rem;
+}
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#title {
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+#message {
+  margin: 1rem 0;
+  color: red;
+  font-size: 1rem;
+}
+
+#formTitle,
+#listTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+}
+#listTitle {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 2rem;
+  gap: 1rem;
+}
+#listTitle li {
+  display: flex;
+}
+#listTitle li span {
+  font-size: 1.1rem;
+  border: 1px solid #393e46;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: normal;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+#listTitle li button {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  margin-left: -1rem;
+  align-items: center;
+  font-size: large;
+}
+#listTitle li button:hover {
+  transition: 300ms;
+  color: gray;
+}
+
+@keyframes slideOut {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+li {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slide-out {
+  animation: slideOut 0.3s ease-in-out forwards;
+}
+
+@media only screen and (max-width: 768px) {
+  #appTitle {
+    padding: 4rem;
+  }
+  #formListContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  #formContainer {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="appTitle">TODO APP</div>
+      <div id="formListContainer">
+        <form id="formContainer">
+          <span id="formTitle"> Add to list</span>
+          <div id="titleContainer">
+            <label for="title">Title:</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              oninput="validateInput()"
+            />
+            <p id="message">Title can not be empty</p>
+          </div>
+          <div>
+            <label for="completed">Completed:</label>
+            <input type="checkbox" id="completed" name="completed" />
+          </div>
+          <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+
+        <div id="list">
+          <ul id="listTitle">
+            List
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

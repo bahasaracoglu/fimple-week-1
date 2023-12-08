@@ -96,12 +96,14 @@ const textInput = document.getElementById("title");
 textInput.addEventListener("input", validateInput);
 
 //submit button listener
+const submitButton = document.getElementById("submitBtn");
 document
   .getElementById("submitBtn")
   .addEventListener("click", function (event) {
     event.preventDefault();
     console.log("clicked");
     getValues();
+    submitButton.disabled = true;
   });
 
 init();

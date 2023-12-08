@@ -195,6 +195,7 @@ table {
   justify-content: space-between;
   line-height: normal;
   background-color: rgb(255, 255, 255);
+  min-width: 26rem;
   width: 100%;
 }
 #listTitle li button {
@@ -236,5 +237,8 @@ li {
   }
   #formContainer {
     margin-bottom: 1rem;
+  }
+  #listTitle li span {
+    min-width: 5rem;
   }
 }
